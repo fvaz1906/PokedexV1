@@ -1,0 +1,20 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="pokemonSearch" placeholder="Pesquise seu Pokemon..." aria-label="Pesquise seu Pokemon..." aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" (click)="onPokemonSearch()">Buscar</button>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-3" *ngFor="let pokemon of pokemons">
+        <div class="card mb-3">
+            <img src="{{ pokemon.sprite.url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{ pokemon.name }}</h5>
+                <hr />
+                <span>Peso: {{ pokemon.weight }}</span> <br />
+                <span>Altura: {{ pokemon.height }}</span> <br />
+            </div>
+        </div>
+    </div>
+</div>

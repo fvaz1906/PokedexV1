@@ -9,4 +9,8 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\Pokedex.Web</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\components\shared\helpers\" />
+    <Folder Include="src\environments\" />
+  </ItemGroup>
 </Project>

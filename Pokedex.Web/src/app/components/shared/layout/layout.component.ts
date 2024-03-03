@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
-    selector: 'app-root',
+    selector: 'app-layout',
     standalone: true,
     imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    templateUrl: './layout.component.html',
+    styleUrl: './layout.component.css'
 })
-export class AppComponent {
-    title = 'Pokedex';
+export class LayoutComponent {
+
 }
