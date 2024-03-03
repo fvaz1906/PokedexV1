@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXhhvYPu+7ku1c6RuQsKP2wAAAAACAAAAAAAQZgAAAAEAACAAAACYHZoLsuJFNDsxiwKX3yl7pc3NLL04Jc8RGPislGvC6wAAAAAOgAAAAAIAACAAAABGhCpiCzfSkTClDXBZHHKvngXfDgUjoipZg60iodmC6jAAAAAlmYJxRiTv7FKUPL7c/jOJhnu1uZVdkUu5vNaSzfVdpFyvxpF++KRyjpskGdNaTJZAAAAAl/pbj8o2IXkwhReoUWVcKaMzVyjjxELwauiiZizQKZ4rT3I7QB+JOh4nqVh73P2sOmx0k61EW0AqY2o4P4BMcA==</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.oovaz.com.br/www/pokedexapi</_PublishTargetUrl>
+    <History>True|2024-03-03T12:24:36.6304225Z;False|2024-03-03T09:23:55.0880594-03:00;False|2024-03-03T09:23:31.2287579-03:00;True|2024-03-02T23:45:17.6465090-03:00;False|2024-03-02T23:43:41.9488279-03:00;True|2024-03-02T23:33:05.1191823-03:00;True|2024-03-02T23:31:04.2832771-03:00;True|2024-03-02T23:02:39.0373044-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.json">
+      <publishTime>02/03/2024 23:41:55</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.OpenApi.dll">
+      <publishTime>10/20/2023 14:31:08</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>01/16/2024 12:20:56</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>01/16/2024 12:21:12</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>01/16/2024 12:21:20</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>01/14/2022 16:54:16</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>02/23/2022 21:12:18</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>09/26/2022 14:42:22</publishTime>
+    </File>
+    <File Include="Microsoft.OpenApi.dll">
+      <publishTime>08/29/2020 17:14:12</publishTime>
+    </File>
+    <File Include="MySqlConnector.dll">
+      <publishTime>12/23/2021 00:43:44</publishTime>
+    </File>
+    <File Include="Pokedex.Api.deps.json">
+      <publishTime>03/03/2024 09:24:28</publishTime>
+    </File>
+    <File Include="Pokedex.Api.dll">
+      <publishTime>03/03/2024 09:24:28</publishTime>
+    </File>
+    <File Include="Pokedex.Api.exe">
+      <publishTime>03/03/2024 09:24:28</publishTime>
+    </File>
+    <File Include="Pokedex.Api.pdb">
+      <publishTime>03/03/2024 09:24:28</publishTime>
+    </File>
+    <File Include="Pokedex.Api.runtimeconfig.json">
+      <publishTime>03/02/2024 23:30:42</publishTime>
+    </File>
+    <File Include="Pokedex.Core.dll">
+      <publishTime>03/02/2024 23:30:39</publishTime>
+    </File>
+    <File Include="Pokedex.Core.pdb">
+      <publishTime>03/02/2024 23:30:39</publishTime>
+    </File>
+    <File Include="Pokedex.Data.dll">
+      <publishTime>03/02/2024 23:30:40</publishTime>
+    </File>
+    <File Include="Pokedex.Data.pdb">
+      <publishTime>03/02/2024 23:30:40</publishTime>
+    </File>
+    <File Include="Pokedex.Service.dll">
+      <publishTime>03/02/2024 23:30:40</publishTime>
+    </File>
+    <File Include="Pokedex.Service.pdb">
+      <publishTime>03/02/2024 23:30:40</publishTime>
+    </File>
+    <File Include="Pomelo.EntityFrameworkCore.MySql.dll">
+      <publishTime>07/24/2022 07:24:54</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>01/11/2023 03:48:20</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>01/11/2023 03:48:24</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>01/11/2023 03:49:02</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>02/15/2023 21:32:04</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>03/03/2024 09:24:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

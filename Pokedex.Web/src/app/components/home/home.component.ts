@@ -13,7 +13,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponent {
 
-
     public pokemonSearch!: string;
     public pokemons: any;
 

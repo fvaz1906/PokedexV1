@@ -1,4 +1,4 @@
 export const environment = {
-  production: false,
-  API_URL: 'https://localhost:32768'
+    production: false,
+    API_URL: 'https://pokedexapi.oovaz.com.br'
 }

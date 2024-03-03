@@ -6,7 +6,7 @@ export const routes: Routes = [
     {
         path: '', title: 'Layout', component: LayoutComponent,
         children: [
-            { path: '', title: 'Home', component: HomeComponent },
+            { path: '', title: 'Pokedex V1', component: HomeComponent },
         ]
     }
     //{ path: '', redirectTo: '/home', pathMatch: 'full' },
