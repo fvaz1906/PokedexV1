@@ -25,6 +25,8 @@ public class PokemonRepository
             return await _context.Pokemons
                 .AsNoTracking()
                     .Include(x => x.Sprite)
+                    .Include(x => x.RelPokemonAndType)
+                        .ThenInclude(x => x.PokemonType)
                     .ToListAsync();
         }
         catch (Exception ex)

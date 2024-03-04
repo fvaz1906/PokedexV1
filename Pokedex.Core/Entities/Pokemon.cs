@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Pokedex.Core.Entities.Relationship;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pokedex.Core.Entities;
 
@@ -18,4 +19,6 @@ public class Pokemon
 
     [InverseProperty("Pokemon")]
     public Sprite? Sprite { get; set; }
+
+    public ICollection<RelPokemonAndType> RelPokemonAndType { get; set; } = null!;
 }

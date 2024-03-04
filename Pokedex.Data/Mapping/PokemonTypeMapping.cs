@@ -4,7 +4,7 @@ using Pokedex.Core.Entities;
 
 namespace Pokedex.Data.Mapping;
 
-public class PokemonTypeMapping
+public class PokemonTypeMapping : IEntityTypeConfiguration<PokemonType>
 {
     public void Configure(EntityTypeBuilder<PokemonType> entity)
     {
