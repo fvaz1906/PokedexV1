@@ -16,15 +16,15 @@ export class PokemonService
 
     constructor(private http: HttpClient, private router: Router) { }
 
-    getPokemons(): Observable<IPokemon> {
+    getPokemons(page: number, pageSize: number): Observable<IPokemon> {
         return this.http.get<IPokemon>(
-            `${this.API_URL}/api/v1/pokemon/?page=1&pageSize=48`,
+            `${this.API_URL}/api/v1/pokemon/?page=${page}&pageSize=${pageSize}`,
         ).pipe(map(response => response));
     }
 
-    getPokemonSearch(search: string): Observable<IPokemon> {
+    getPokemonSearch(page: number, pageSize: number, search: string): Observable<IPokemon> {
         return this.http.get<IPokemon>(
-            `${this.API_URL}/api/v1/pokemon/?page=1&pageSize=48&name=${search}`,
+            `${this.API_URL}/api/v1/pokemon/?page=${page}&pageSize=${pageSize}&name=${search}`,
         ).pipe(map(response => response));
     }
 
