@@ -19,10 +19,12 @@ public class Binding
 
         // Repositories
         services.AddScoped<PokemonRepository>();
+        services.AddScoped<PokemonTypeRepository>();
         services.AddScoped<SpriteRepository>();
 
         //Services
         services.AddScoped<IPokemonService, PokemonService>();
+        services.AddScoped<IPokemonTypeService, PokemonTypeService>();
         services.AddScoped<ISpriteService, SpriteService>();
     }
 }

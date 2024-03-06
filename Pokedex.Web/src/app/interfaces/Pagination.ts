@@ -1,4 +1,4 @@
-export interface IPokemon {
+export interface Pagination {
     data: any[];
     page: number;
     pageSize: number;

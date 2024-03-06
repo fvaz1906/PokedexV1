@@ -13,8 +13,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponent {
 
-    public pokemonSearch!: string;
     public pokemons: any;
+    public pokemonTypes: any;
+    public pokemonSearch!: string;
     public currentPage: number = 1;
     public totalPages!: number;
     public pageSize: number = 9;
@@ -22,6 +23,7 @@ export class HomeComponent {
     constructor(private pokemonService: PokemonService)
     {
         this.onGetPokemons();
+        this.onPokemonType();
     }
 
     onGetPokemons()
@@ -29,6 +31,31 @@ export class HomeComponent {
         this.pokemonService.getPokemons(this.currentPage, this.pageSize).subscribe((response) => {
             this.pokemons = response.data;
             this.totalPages = response.totalPages;
+        });
+    }
+
+    onPokemonType() {
+        this.pokemonService.getPokemonType().subscribe((response) => {
+            this.pokemonTypes = response.data;
+        });
+    }
+
+    onPokemonTypeSearch(type: string, qtde: number) {
+        this.pokemonService.getPokemonTypeSearch(type).subscribe((response) => {
+            let rsp = response.data[0].relPokemonAndType;
+            let pokemons: any = [];
+            let pokemonTypes: any = [];
+
+            rsp.forEach(function (elemento: any) {
+                console.log(elemento);
+                pokemons.push(elemento.pokemon);
+            });
+
+            //this.pokemons = pokemons;
+
+            //console.log(pokemons);
+
+            //console.log(response.data[0].relPokemonAndType);
         });
     }
 
