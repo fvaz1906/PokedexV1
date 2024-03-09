@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+
+    <mat-sidenav #sidenav class="sidenav">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/" (click)="sidenav.toggle()">Home</a>
+            <a mat-list-item routerLink="/about" (click)="sidenav.toggle()">About</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+        <mat-toolbar color="primary" class="sticky-ice">
+            <div class="container-menu">
+                <mat-toolbar-row>
+                    <span routerLink="/" style="cursor: pointer;">
+                        <img src="../../../../assets/pokedex-logo.png" width="120px"/>
+                    </span>
+                    <span class="spacer"></span>
+                    <button mat-icon-button (click)="sidenav.toggle()" aria-label="Toggle menu">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+            </div>
+        </mat-toolbar>
+
+        <div class="container-body">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

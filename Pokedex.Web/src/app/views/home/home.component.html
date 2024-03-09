@@ -1,0 +1,32 @@
+<div class="container-search-pokemon">
+    <mat-form-field class="searchPokemon">
+        <mat-label>Pesquise seu pokemon</mat-label>
+        <input matInput type="text" [(ngModel)]="pokemonSearch">
+        <button matSuffix mat-icon-button (click)="obterDados()">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
+</div>
+
+<div class="card-grid">
+    <div class="card" *ngFor="let pokemon of pokemons">
+        <div class="card-header">
+            <img src="{{ pokemon.sprite.url }}" alt="Imagem do Card">
+        </div>
+        <div class="separator"></div>
+        <div class="card-body">
+            <div class="left-content">
+                <p class="bold font">{{ pokemon.name | titlecase }}</p>
+            </div>
+            <!--<div class="right-content">
+                <p>--</p>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<div class="container-buttonMore">
+    <button mat-fab color="primary" aria-label="Mostrar mais" (click)="mostrarMais()">
+        <mat-icon>arrow_downward</mat-icon>
+    </button>
+</div>

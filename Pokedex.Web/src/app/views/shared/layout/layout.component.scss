@@ -1,0 +1,50 @@
+.sidenav-container {
+    height: 100%;
+}
+
+.sidenav {
+    width: 250px; /* Ajuste conforme necessário */
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container-body {
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .container-body {
+        margin-top: 100px;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-bottom: 30px;
+    }
+}
+
+.sticky-ice {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9998;
+}
