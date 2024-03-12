@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
     faHeart = faHeart
     pokemons: any[] = [];
     pageSize: number = 12;
-    pageSizeMore: number = 8;
+    pageSizeMore: number = 6;
     pokemonSearch!: string;
 
     constructor(private pokemonService: PokemonService) { }

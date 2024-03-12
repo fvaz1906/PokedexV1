@@ -1,30 +1,26 @@
-<mat-sidenav-container class="sidenav-container">
-
-    <mat-sidenav #sidenav class="sidenav">
-        <mat-nav-list>
-            <a mat-list-item routerLink="/" (click)="sidenav.toggle()">Home</a>
-            <a mat-list-item routerLink="/about" (click)="sidenav.toggle()">About</a>
-        </mat-nav-list>
-    </mat-sidenav>
-
-    <mat-sidenav-content class="content">
-        <mat-toolbar color="primary" class="sticky-ice">
-            <div class="container-menu">
-                <mat-toolbar-row>
-                    <span routerLink="/" style="cursor: pointer;">
-                        <img src="../../../../assets/pokedex-logo.png" width="120px"/>
-                    </span>
-                    <span class="spacer"></span>
-                    <button mat-icon-button (click)="sidenav.toggle()" aria-label="Toggle menu">
-                        <mat-icon>menu</mat-icon>
-                    </button>
-                </mat-toolbar-row>
-            </div>
-        </mat-toolbar>
-
-        <div class="container-body">
-            <router-outlet></router-outlet>
+<header>
+    <div class="container-navbar"></div>
+    <nav class="navbar bg-body-tertiary" [ngClass]="{'fixed-navbar': isNavbarFixed}">
+        <div class="container">
+            <a class="navbar-brand">
+                <img class="img-logo" src="../../../../assets/pokedex-logo.png">
+            </a>
+            <a class="btn" type="submit">
+                <div style="width: 100%; height: 100%; position: relative">
+                    <div style="width: 60px; height: 60px; left: 0px; top: 0px; border-radius: 5px; border: 2px white solid"></div>
+                    <div style="width: 32px; height: 0px; left: 14px; top: 15px; position: absolute; border: 2px white solid"></div>
+                    <div style="width: 32px; height: 0px; left: 14px; top: 30px; position: absolute; border: 2px white solid"></div>
+                    <div style="width: 32px; height: 0px; left: 14px; top: 45px; position: absolute; border: 2px white solid"></div>
+                </div>
+            </a>
         </div>
-    </mat-sidenav-content>
+    </nav>
+</header>
 
-</mat-sidenav-container>
+<section>
+    <router-outlet></router-outlet>
+</section>
+
+<footer>
+    <div class="container-footer"></div>
+</footer>

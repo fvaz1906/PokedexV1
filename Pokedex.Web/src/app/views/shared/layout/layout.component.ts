@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
@@ -34,5 +34,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {
-    mode = 'Over'
+
+    isNavbarFixed: boolean = false;
+
+    constructor(private el: ElementRef) { }
+
+    @HostListener('window:scroll', ['$event'])
+    onWindowScroll() {
+        const navbarOffset = this.el.nativeElement.querySelector('.navbar').offsetTop;
+        this.isNavbarFixed = window.pageYOffset > navbarOffset;
+    }
 }
