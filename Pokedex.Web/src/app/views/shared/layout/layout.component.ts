@@ -11,6 +11,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faCoffee, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-layout',
@@ -28,7 +30,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         ReactiveFormsModule,
         MatSelectModule,
         MatFormFieldModule,
-        MatListModule
+        MatListModule,
+        FontAwesomeModule
     ],
     templateUrl: './layout.component.html',
     styleUrl: './layout.component.scss'
@@ -36,12 +39,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 export class LayoutComponent {
 
     isNavbarFixed: boolean = false;
+    faBars = faBars;
 
     constructor(private el: ElementRef) { }
 
-    @HostListener('window:scroll', ['$event'])
-    onWindowScroll() {
-        const navbarOffset = this.el.nativeElement.querySelector('.navbar').offsetTop;
-        this.isNavbarFixed = window.pageYOffset > navbarOffset;
-    }
+    //@HostListener('window:scroll', ['$event'])
+    //onWindowScroll() {
+    //    const navbarOffset = this.el.nativeElement.querySelector('.navbar').offsetTop;
+    //    this.isNavbarFixed = window.pageYOffset > navbarOffset;
+    //}
 }

@@ -1,6 +1,6 @@
 .navbar {
     background-color: #820000 !important;
-    height: 120px;
+    height: 100px;
 }
 
 .container-navbar {
@@ -9,8 +9,8 @@
 }
 
 .img-logo {
-    width: 235px;
-    height: 80px;
+    width: 166px;
+    height: 55px;
 }
 
 .container-footer {
@@ -23,4 +23,16 @@
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.bars-custom {
+    color: white;
+}
+
+.btn-menu-custom {
+    border-color: white;
+}
+
+.btn-menu-custom:hover {
+    background-color: #820000 !important;
 }
